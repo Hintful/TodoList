@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
+import Credit from './Credit';
 import Navbar from './Navbar';
 import ThemeToggle from './ThemeToggle';
 import ThemeToggleText from './ThemeToggleText';
@@ -21,6 +22,7 @@ const Container = () => {
         <TodoForm />
         <ThemeToggle/>
         <ThemeToggleText />
+        <Credit />
       </div>
     </div>
   );
