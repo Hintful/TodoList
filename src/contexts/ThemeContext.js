@@ -3,7 +3,8 @@ import React, { createContext, useEffect, useState } from 'react';
 export const ThemeContext = createContext();
 
 const ThemeContextProvider = (props) => {
-  const userTheme = JSON.parse(localStorage.getItem('theme'));
+  const loadTheme = JSON.parse(localStorage.getItem('theme'));
+  const userTheme = loadTheme === null ? { isLightTheme: true } : loadTheme; // for first time visitors with no local data
 
   const [theme, setTheme] = useState({
     isLightTheme: userTheme.isLightTheme,
