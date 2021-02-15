@@ -8,7 +8,7 @@ const ThemeToggleText = () => {
   const show = theme.showToggleText ? "block" : "none";
 
   return (  
-    <div style={{ display: show, color: style.text }} class="theme-toggle-text">
+    <div style={{ display: show, color: style.text }} className="theme-toggle-text">
       Change Theme
     </div>
   );

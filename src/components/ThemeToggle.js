@@ -16,7 +16,7 @@ const ThemeToggle = () => {
 
   return (
     <div style={{ background: style.bg, border: "1px solid " + style.text }} 
-    onClick={toggleTheme} onMouseEnter={toggleThemeText} onMouseLeave={toggleThemeText} class="theme-toggle"></div>
+    onClick={toggleTheme} onMouseEnter={toggleThemeText} onMouseLeave={toggleThemeText} className="theme-toggle"></div>
   );
 }
  
