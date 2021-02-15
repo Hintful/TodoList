@@ -13,7 +13,7 @@ Then use the command `npm start` to start-up the project locally at https://loca
 
 ## Implementation
 
-React/JavaScript has been used mainly to create this application. After being exposed to React Hooks/Context API, this application has been made to experiment with the Hooks and Context APIs as much as possible. 
+React/JavaScript has been used mainly to create this application. After being exposed to React Hooks/Context API, this application has been made to experiment with the Hooks and Context APIs as much as possible. Also, this is the first time I've utilized the `localStorage` to save user data, including list of tasks and theme settings.
 
 React Context API has been used for a couple of functionalities for this application including the main function of keeping track of the To-do Lists with `TodoContext`, paired with Reducer function created with React Hooks API, and also for allowing the overall color theme to be toggled between Light Theme and Dark Theme with `ThemeContext`.
 
