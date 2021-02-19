@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 import { TodoContext } from '../contexts/TodoContext';
+import ReactGA from 'react-ga';
 
 const TodoForm = () => {
   // contexts
@@ -15,6 +16,10 @@ const TodoForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault(); // prevent page from refreshing upon submit
+    ReactGA.event({
+      category: 'TodoList',
+      action: 'Added a task'
+    });
     todoDispatch({type: 'ADD_TODO', todo: {name, note}})
     // addTodo(name, note);
     setName('');
